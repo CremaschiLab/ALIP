@@ -459,9 +459,6 @@ g3(r,s)..Xtax1(r,s) + (1-x(r,s))*4231650 =g= 0;
 g4(r,s).. tax(r,s) - 4231650*x(r,s) =l= 0;
 g5(r,s).. tax(r,s) - 4231650*(x(r,s)-1) =g= 0;
 
-*d100(s)..y('7','2',s)=e=1;
-*d101(s)$(ord(s) = 1 or ord(s) =3 or ord(s) =5 or ord(s) =7)..z('7','16',s)=e=1;
-
 option limrow = 0,
        limcol = 0,
        iterlim = 1e9,
